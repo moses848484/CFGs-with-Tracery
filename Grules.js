@@ -2,7 +2,7 @@ let scenario = []
 //The grammar rules and assigning the give fuction its function.
 function give() {
     var rules = {
-        "start": "#story#",
+        "start": "#[identity:#character#]story#",
         "adj": ["brave", "ugly", "tedious", "cunning", "trecherous"],
         "name": ["Luyando", "Paul", "Abel", "Christopher", "Hassan", "Moses"],
         "verb": ["sung", "fought", "wept","walked"],
@@ -11,7 +11,7 @@ function give() {
         "animal": ["frog", "cow", "chief", "nyami-nyami"],
         "place": ["feild", "mountain", "hill", "bush site", "trench","city","town"],
         "time": ["evening", "day"],
-        "story": ["The #adj# #character# #verb# the #animal# #adv# and #adv# left the scene. Later on in the #time#, the #character# met with #name# at the #place# to discuss about the earlier event."]
+        "story": ["The #adj# #identity# #verb# the #animal# #adv# and #adv# left the scene. Later on in the #time#, the #character# met with #name# at the #place# to discuss about the earlier event."]
     }
     //Calling the tracery function to create the grammar we just defined and generating some end result from it.
     let grammar = tracery.createGrammar(rules);
