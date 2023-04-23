@@ -9,7 +9,7 @@ function give() {
         "character": ["hero", "villan","monster","genius","nerd"],
         "adv": ["loudly", "quietly", "swiftly", "slowly", "faintly","madly","relentlesly"],
         "animal": ["frog", "cow", "chief", "nyami-nyami"],
-        "place": ["feild", "mountain", "hill", "bush site", "trench","city","town"],
+        "place": ["field", "mountain", "hill", "forest", "trench","city","town","desert"],
         "time": ["evening", "day"],
         "story": ["The #adj# #identity# #verb# the #animal# #adv# and #adv# left the scene. Later on in the #time#, the #character# met with #name# at the #place# to discuss about the earlier event."]
     }
