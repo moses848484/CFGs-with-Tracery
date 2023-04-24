@@ -1,6 +1,6 @@
-let scenario = []
+let sentences = []
 //The grammar rules and assigning the give fuction its function.
-function give() {
+function generate() {
     var rules = {
         "start": "#[identity:#character#]story#",
         "adj": ["brave", "ugly", "tedious", "cunning", "trecherous"],
@@ -17,13 +17,13 @@ function give() {
     let grammar = tracery.createGrammar(rules);
     let expansion = grammar.flatten('#start#');
 
-    scenario.push(expansion);
-    printScenario(scenario);
+    sentences.push(expansion);
+    printSentences(sentences);
 }
-function printScenario(scenario) {
-    let textBox = document.getElementById("scenario");
+function printSentences(sentences) {
+    let textBox = document.getElementById("sentences");
     textBox.innerHTML = "";
-    for(let i=scenario.length-1; i>=0; i--) {
-        textBox.innerHTML += "<p>"+scenario[i]+"</p>"
+    for(let i=sentences.length-1; i>=0; i--) {
+        textBox.innerHTML += "<p>"+sentences[i]+"</p>"
     }
 }
