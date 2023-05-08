@@ -5,7 +5,7 @@ function give() {
         "start": "#[identity:#character#]story#",
         "adj": ["brave", "ugly", "tedious", "cunning", "trecherous"],
         "name": ["Luyando", "Paul", "Abel", "Christopher", "Hassan", "Moses"],
-        "verb": ["sung", "fought", "wept","walked"],
+        "verb": ["sung", "fought", "wept","walked", "ran", "fell"],
         "character": ["hero", "villan","monster","genius","nerd"],
         "adv": ["loudly", "quietly", "swiftly", "slowly", "faintly","madly","relentlesly"],
         "animal": ["frog", "cow", "chief", "nyami-nyami"],
